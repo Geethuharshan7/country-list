@@ -38,3 +38,26 @@
     font-size: 14px !important; 
     color: #555; 
 }
+.custom-border-bottom {
+    display: inline-block;
+    border-bottom: 3px solid #5b5959;
+    padding: 0.5rem 1rem;
+    height: 100% !important;
+  }
+  .custom-border-top{
+  	display: inline-block;
+  	border-top: 3px solid #5b5959 !important;
+  	padding: 0.5rem 1rem;
+    height: 100% !important;
+  }
+
+  @media (min-width: 768px) {
+  .slider-height {
+    height: 400px;
+  }
+}
+@media(min-width:768px){
+.custom_width{
+	width: 80% !important;
+}
+}
