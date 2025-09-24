@@ -48,12 +48,12 @@ const Login = () => {
 
     return (
         <Container fluid className="d-flex align-items-center justify-content-center">
-            <Row className="w-100 mt-7 mt-md-0">
-                <Col md={6} className="p-4 p-md-5">
-                    <h2 className="mb-4 fs-24 fs-md-32 text-center text-md-left">Sign In</h2>
+            <Row className="mt-7 mt-md-7 mx-auto" style={{ width: '100%', maxWidth: '75%' }} >
+                <Col md={6} className="p-md-custom" style={{padding:4}}>
+                    <h2 className="mb-4 fs-24 fs-md-32 text-center text-md-start">Sign In</h2>
 
                     <div className="d-flex pb-3 fs-7 fs-md-5">
-                        <div className="pe-2">New User?</div>
+                        <div className="pe-2 fw-bold">New User?</div>
                         <div className="hover-underline">
                             Create an account
                         </div>
@@ -72,6 +72,7 @@ const Login = () => {
                                     setUsernameError(validateUsernameOrEmail(e.target.value));
                                 }}
                                 required
+                                className="custom-input placeholder-small"
                             />
                             <Form.Control.Feedback type="invalid">
                                 {usernameError}
@@ -91,6 +92,7 @@ const Login = () => {
                                     }
                                 }}
                                 required
+                                className="custom-input placeholder-small"
                             />
                             <Form.Control.Feedback type="invalid">
                                 {passwordError}
@@ -101,7 +103,7 @@ const Login = () => {
                             <Form.Check type="checkbox" label="Keep me signed in" />
                         </Form.Group>
 
-                        <Button type="submit" variant="dark" className="w-100 mb-3">
+                        <Button type="submit" variant="dark" className="w-100 mb-3 rounded-0">
                             Sign In
                         </Button>
                     </Form>
@@ -124,7 +126,7 @@ const Login = () => {
                 </Col>
 
                 <Col md={6} className="d-none d-md-flex justify-content-center align-items-center p-5">
-                    <img src={login_image} alt="Login" width={200} />
+                    <img src={login_image} alt="Login" width={200} style={{height:'80%',marginBottom:'25%'}} />
                 </Col>
             </Row>
         </Container>

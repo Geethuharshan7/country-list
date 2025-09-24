@@ -18,3 +18,23 @@
 .fs-32{
 	font-size: 32px;
 }
+@media (min-width: 768px) {
+  .p-md-custom {
+    padding: 10% !important; 
+  }
+}
+
+.custom-input {
+    border: 1px solid #555555 !important; 
+    border-radius: 0px !important; 
+    box-shadow: none; 
+}
+
+.custom-input:focus {
+    border-color: none ;
+    box-shadow: 0 0 0 2px #0d6efd !important; 
+}
+.placeholder-small::placeholder {
+    font-size: 14px !important; 
+    color: #555; 
+}
