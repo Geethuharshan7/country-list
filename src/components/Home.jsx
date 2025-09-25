@@ -97,7 +97,7 @@ export default function Home(){
                 {slides[(slideIndex + 1) % slides.length] && (
                     <Card className="h-100">
                         <Card.Body className="d-flex flex-column justify-content-center align-items-center text-center" style={{minHeight: 260}}>
-                            <img src={slides[(slideIndex + 1) % slides.length].flag} alt={slides[(slideIndex + 1) % slides.length].name} style={{maxHeight: 140}} />
+                            <img src={slides[(slideIndex + 1) % slides.length].flag} alt={slides[(slideIndex + 1) % slides.length].name} style={{maxHeight: 140,width:'100%'}} />
                             <div className="mt-3">{slides[(slideIndex + 1) % slides.length].name}</div>
                         </Card.Body>
                     </Card>
